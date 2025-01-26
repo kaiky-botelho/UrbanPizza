@@ -1,0 +1,36 @@
+.introducao{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.introducao-conteudo{
+    display: grid;
+    gap: 20px;
+}
+
+.introducao-imagem{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 20px;
+}
+
+.introducao-imagem img{
+    object-fit: cover;
+}
+
+@media(max-width:800px){
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .introducao-imagem{
+        display: none;
+        object-position: bottom;
+    }
+}

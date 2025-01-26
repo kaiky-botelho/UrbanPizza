@@ -1,0 +1,44 @@
+.sobre-bg{
+    background: var(--cor-p1);
+}
+
+.sobre{
+    display: grid;
+    gap: 40px;
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+.sobre > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.sobre-item{
+    display: grid;
+    background: var(--cor-1);
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.sobre h3{
+    text-transform: uppercase;
+}
+
+.sobre h3,
+.sobre p{
+    width: 25ch;
+}
+
+@media (max-width:800px){
+    .sobre h2{
+        text-align: center;
+    }
+
+    .sobre-item{
+        padding: 20px;
+    }
+}

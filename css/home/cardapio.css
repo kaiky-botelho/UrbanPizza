@@ -1,0 +1,52 @@
+.cardapio-bg{
+    background: var(--cor-p3);
+    box-shadow: inset 0 120px var(--cor-1);
+}
+
+.cardapio{
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    gap: 40px;
+    padding-top: 60px;
+    align-items: center;
+}
+
+.cardapio-conteudo{
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.botao{
+    background: var(--cor-p2);   
+}
+
+@media (max-width:1000px){
+    .cardapio-bg {
+        box-shadow: inset 0 90px var(--cor-1)
+    }
+}
+
+@media (max-width:800px){
+    .cardapio-bg {
+        box-shadow: none
+    }
+    .cardapio{
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        justify-content: center;
+    }
+
+    .cardapio-conteudo{
+        padding: 0 60px;
+
+    }
+    .cardapio-imagem{
+        display: none;
+    }
+    .botao{
+        margin: 0 auto;
+    }
+}

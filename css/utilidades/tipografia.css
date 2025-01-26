@@ -1,0 +1,40 @@
+.font-1-xxl {
+    font: 900 3.5rem "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.font-xs {
+    font: 500 1.2rem "Roboto", sans-serif;
+}
+
+.font-1-r {
+    font: 600 1.375rem "Roboto", sans-serif;
+}
+
+.font-1-m {
+    font: 900 2.8rem "Roboto";
+}
+
+.font-1-m-l {
+    font: 900 1rem "Roboto";
+}
+
+.font-1-s {
+    font: 800 1.3rem "Roboto";
+}
+
+.font-1-xl {
+    font: 700 1.2rem "Roboto";
+}
+
+
+
+@media (max-width:1000px) {
+    .font-1-xxl {
+        font: 900 2rem "Roboto", sans-serif;
+    }
+
+    .font-1-r {
+        font: 600 1.2rem "Roboto", sans-serif;
+    }
+}

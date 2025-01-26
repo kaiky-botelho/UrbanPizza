@@ -1,0 +1,68 @@
+.maisPedidos{
+    display: grid;
+    gap: 40px;
+    padding-top:60px ;
+    padding-bottom: 60px;
+}
+
+.bgMais{
+    background: url(../../img/fundo/Fundo-quadriculado.svg);
+    display: flex;
+}
+
+.maisPedidos-pizza{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.maisPedidos-item{
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid var(--cor-p1);
+    box-sizing: border-box;
+}
+
+.maisPedidos-item h3{
+    text-transform: uppercase;
+}
+
+.maisPedidos-item img{
+    margin: 20px 0;
+}
+
+.maisPedidos ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-items: center;
+}
+
+.maisPedidos li{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.maisPedidos li::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 2px;
+    background-color: var(--cor-p1);
+}
+
+@media (max-width:800px){
+    .maisPedidos ul{
+        grid-template-columns: 1fr;
+    }
+
+    .maisPedidos h2{
+        text-align: center;
+    }
+}
